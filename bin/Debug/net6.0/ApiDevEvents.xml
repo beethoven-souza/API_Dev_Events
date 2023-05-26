@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiDevEvents</name>
+    </assembly>
+    <members>
+        <member name="M:ApiDevEvents.Controllers.DevEventsController.GetAll">
+            <summary>
+            Obter todos os eventos
+            </summary>
+            <returns>Coleção de eventos</returns>
+            <response code="200">Sucesso</response>
+        </member>
+        <member name="M:ApiDevEvents.Controllers.DevEventsController.GetById(System.Guid)">
+            <summary>
+            Obter um evento
+            </summary>
+            <param name="id">Identificador do evento</param>
+            <returns>Dados do evento</returns>
+            <response code="200">Sucesso</response>
+            <response code="404">Não encontrado</response>
+        </member>
+        <member name="M:ApiDevEvents.Controllers.DevEventsController.Post(ApiDevEvents.Entities.DevEvents)">
+            <summary>
+            Cadastrar um evento
+            </summary>
+            <remarks>
+            </remarks>
+            <param name="devEvent">Dados do evento</param>
+            <returns>Objeto recém-criado</returns>
+            <response code="201">Sucesso</response>
+        </member>
+        <member name="M:ApiDevEvents.Controllers.DevEventsController.Update(System.Guid,ApiDevEvents.Entities.DevEvents)">
+            <summary>
+            Atualizar um evento
+            </summary>
+            <remarks>
+            </remarks>
+            <param name="id">Identificador do evento</param>
+            <param name="input">Dados do evento</param>
+            <returns>Not.</returns>
+            <response code="404">Não encontrado.</response>
+            <response code="204">Sucesso</response>
+        </member>
+        <member name="M:ApiDevEvents.Controllers.DevEventsController.Delete(System.Guid)">
+            <summary>
+            Deletar um evento
+            </summary>
+            <param name="id">Identificador de evento</param>
+            <returns>Not</returns>
+            <response code="404">Não encontrado</response>
+            <response code="204">Sucesso</response>
+        </member>
+        <member name="M:ApiDevEvents.Controllers.DevEventsController.PostSpeakers(System.Guid,ApiDevEvents.Entities.DevEventSpeaker)">
+            <summary>
+            Cadastrar palestrante
+            </summary>
+            <remarks>
+            </remarks>
+            <param name="id">Identificador do evento</param>
+            <param name="speaker">Dados do palestrante</param>
+            <returns>Not</returns>
+            <response code="204">Sucesso</response>
+            <response code="404">Evento não encontrado</response>
+        </member>
+    </members>
+</doc>
